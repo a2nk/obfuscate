@@ -16,8 +16,8 @@ Y = '\033[1;33m'
 C = '\033[1;36m'
 
 ask = G + '[' + W + '?' + G + '] '
-sukses = G + '[' + W + '√' + G + '] '
-eror = R + '[' + W + '!' + R + ']'
+success = G + '[' + W + '√' + G + '] '
+error = R + '[' + W + '!' + R + ']'
 
 banner = """
 ██╗     ██╗███╗   ██╗ ██████╗  ██████╗  █████╗ ██╗  ██╗ ██████╗ ███████╗████████╗██╗███╗   ██╗ ██████╗ 
@@ -38,14 +38,14 @@ print (banner2)
 
 def dekrip():
    try:
-       sc = raw_input(ask + W + "Script " + G + "> " + W)
+       sc = input(ask + W + "Script " + G + "> " + W)
        f = open(sc,'r')
        filedata = f.read()
        f.close()
 
        newdata = filedata.replace("eval","echo")
 
-       out = raw_input(ask + W + "Output" + G + " > " + W)
+       out = input(ask + W + "Output" + G + " > " + W)
        f = open(out,'w')
        f.write(newdata)
        f.close()
@@ -54,30 +54,30 @@ def dekrip():
        os.system("bash " + out + " > tes.sh")
        os.remove(out)
        os.system("mv -f tes.sh " + out)
-       print (sukses + "Done..")
+       print (success + "Done..")
 
    except KeyboardInterrupt:
-       print (eror + " Stopped!")
+       print (error + " Stopped!")
    except IOError:
-       print (eror + " File Not Found!")
+       print (error + " File Not Found!")
 
 def enkrip():
    try:
-       script = raw_input(ask + W + "Script " + G + "> " + W)
-       output = raw_input(ask + W + "Output " + G + "> " + W)
+       script = input(ask + W + "Script " + G + "> " + W)
+       output = input(ask + W + "Output " + G + "> " + W)
        os.system("bash-obfuscate " + script + " -o " + output )
-       print (sukses + "Done..")
+       print (success + "Done..")
    except KeyboardInterrupt:
-       print (eror + " Stopped!")
+       print (error + " Stopped!")
    except IOError:
-       print (eror + " File Not Found!")
+       print (error + " File Not Found!")
 
 
-a2nkget = raw_input(W + "Choose" + G + " > ")
+a2nkget = input(W + "Choose" + G + " > ")
 
 if a2nkget == "1" or a2nkget == "01":
    enkrip()
 elif a2nkget == "2" or a2nkget == "02":
    dekrip()
 else:
-   print (eror + " Wrong input")
+   print (error + " Wrong input")
