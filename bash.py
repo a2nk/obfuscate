@@ -12,7 +12,6 @@ c='\E[36m'
 endc='\E[0m'
 enda='\033[0m'
 # Branding
-
 printf """$c$b
  
 ██╗     ██╗███╗   ██╗ ██████╗  ██████╗  █████╗ ██╗  ██╗ ██████╗ ███████╗████████╗██╗███╗   ██╗ ██████╗ 
@@ -24,6 +23,7 @@ printf """$c$b
     $r  Support YT Channel-> Aank is ME © 2022 $c https://aank.me/Youtube 
           
 $endc$enda""";
+
 def dekrip():
    try:
        sc = raw_input(ask + W + "Script " + G + "> " + W)
