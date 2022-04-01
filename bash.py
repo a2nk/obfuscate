@@ -18,8 +18,6 @@ b='\033[1m'
 r='\E[31m'
 g='\E[32m'
 c='\E[36m'
-endc='\E[0m'
-enda='\033[0m'
 
 ask = G + '[' + W + '?' + G + '] '
 success = G + '[' + W + '√' + G + '] '
@@ -35,7 +33,6 @@ banner = """
     $r  Support YT Channel-> Aank is ME © 2022 $c https://aank.me/Youtube 
     
 """.format(D,W,D,W,D,W,Y,W,D,W,D,W,D,W,D,W,D,Y,D,W,D,Y,D,G,W,G,D,G,W,G,Y,D,Y,D,Y,D,Y,D,Y)
-
 banner2 = """
    {}[{}1{}]{} Encript      {}[{}2{}]{} Decrypt
 """.format(G,W,G,W,G,W,G,W)
