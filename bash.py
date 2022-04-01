@@ -1,3 +1,4 @@
+# author : Aank is ME
 # -*- coding: utf-8 -*-
 
 import os
@@ -31,8 +32,8 @@ banner2 = """
    {}[{}1{}]{} Encript      {}[{}2{}]{} Decrypt
 """.format(G,W,G,W,G,W,G,W)
 
-print banner
-print banner2
+print (banner)
+print (banner2)
 
 def decrypt():
    try:
