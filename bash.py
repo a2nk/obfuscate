@@ -1,5 +1,3 @@
-# author : @Syhrularv_
-# editor : a2nk
 # -*- coding: utf-8 -*-
 
 import os
@@ -36,7 +34,7 @@ banner2 = """
 print (banner)
 print (banner2)
 
-def dekrip():
+def decrypt():
    try:
        sc = input(ask + W + "Script " + G + "> " + W)
        f = open(sc,'r')
@@ -61,7 +59,7 @@ def dekrip():
    except IOError:
        print (error + " File Not Found!")
 
-def enkrip():
+def encript():
    try:
        script = input(ask + W + "Script " + G + "> " + W)
        output = input(ask + W + "Output " + G + "> " + W)
@@ -76,8 +74,8 @@ def enkrip():
 a2nkget = input(W + "Choose" + G + " > ")
 
 if a2nkget == "1" or a2nkget == "01":
-   enkrip()
+   encript()
 elif a2nkget == "2" or a2nkget == "02":
-   dekrip()
+   decrypt()
 else:
    print (error + " Wrong input")
