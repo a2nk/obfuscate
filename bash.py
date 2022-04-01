@@ -34,7 +34,7 @@ banner2 = """
 print banner
 print banner2
 
-def dekrip():
+def decrypt():
    try:
        sc = raw_input(ask + W + "Script " + G + "> " + W)
        f = open(sc,'r')
@@ -59,7 +59,7 @@ def dekrip():
    except IOError:
        print (error + " File Not Found!")
 
-def enkrip():
+def encrypt():
    try:
        script = raw_input(ask + W + "Script " + G + "> " + W)
        output = raw_input(ask + W + "Output " + G + "> " + W)
