@@ -4,10 +4,10 @@
 sudo apt install npm
 ```
 ```markdown
-pkg install nodejs OR npm install nodejs
+pkg install nodejs OR sudo npm install nodejs
 ```
 ```markdown
-npm install -g bash-obfuscate
+sudo npm install -g bash-obfuscate
 ```
 ```markdown
 git clone https://github.com/a2nk/obfuscate
